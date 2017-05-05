@@ -11,48 +11,47 @@
 
 <body>
   <a-scene>
-    <!-- Sun -->
-    <a-sphere radius="43.2" position="0 1 0" src="sun.jpg"></a-sphere>
-    <!-- Mercury -->
-    <a-entity geometry="primitive: sphere; radius:0.15" material="src: mercury.jpeg" position="0 1 -48.5">
-      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
-    </a-entity>
-    <!-- Venus -->
-    <a-entity geometry="primitive: sphere; radius:0.375" material="src: venus.jpeg" position="0 1 -53.875">
-      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
-    </a-entity>
-    <!-- Earth -->
-    <a-entity geometry="primitive: sphere; radius: 0.4" material="src: earth.jpg" position="0 1 -59.65">
-      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
-    </a-entity>
-    <!-- Mars -->
-    <a-entity geometry="primitive: sphere; radius: 0.2" material="src: mars.jpeg" position="0 1 -65.7">
-      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
-    </a-entity>
-    <!-- Jupiter -->
-    <a-entity geometry="primitive: sphere; radius: 4.4" material="src: jupiter.jpg" position="0 1 -75.1">
-      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
-    </a-entity>
-    <!-- Saturn -->
-    <a-entity geometry="primitive: sphere; radius: 3.6" material="src: saturn.jpg" position="0 1 -88.6">
-      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
-    </a-entity>
-    <!-- Saturns Ring -->
-    <!-- <a-entity geometry="primitive: ring; radiusInner: 4.6; radiusOuter: 8.75" material="side: double; src: SaturnRings.jpg" position="0 1 -88.6" rotation="45 45 0"></a-entity> -->
-    <!-- Uranus -->
-    <a-entity geometry="primitive: sphere; radius: 1.575" material="src: uranus.jpg" position="0 1 -98.775">
-      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
-    </a-entity>
-    <!-- <a-sphere radius="1.575" position="0 1 -98.775" src="uranus.jpg"></a-sphere> -->
-    <!-- Neptune -->
-    <a-entity geometry="primitive: sphere; radius: 1.53" material="src: neptune.jpg" position="0 1 -106.88">
-      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
-    </a-entity>
-    <!-- this is a test remove this later-->
-    <a-text value="This is a potato" color="red" position="0 1 -82.6"></a-text>
+  <!-- Sun -->
+  <a-sphere radius="43.2" position="0 1 0" src="sun.jpg" opacity=".5"></a-sphere>
+  <!-- Mercury -->
+  <a-entity geometry="primitive: sphere; radius:0.15" material="src: mercury.jpeg" position="0 1 -48.5">
+    <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <!-- Venus -->
+  <a-entity geometry="primitive: sphere; radius:0.375" material="src: venus.jpeg" position="0 1 -53.875">
+    <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <!-- Earth -->
+  <a-entity geometry="primitive: sphere; radius: 0.4" material="src: earth.jpg" position="0 1 -59.65">
+    <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <!-- Mars -->
+  <a-entity geometry="primitive: sphere; radius: 0.2" material="src: mars.jpeg" position="0 1 -65.7">
+    <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <!-- Jupiter -->
+  <a-entity geometry="primitive: sphere; radius: 4.4" material="src: jupiter.jpg" position="0 1 -75.1">
+    <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <!-- Saturn -->
+  <a-entity geometry="primitive: sphere; radius: 3.6" material="src: saturn.jpg" position="0 1 -88.6">
+    <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <!-- Saturns Ring -->
+  <a-entity geometry="primitive: ring; radiusInner: 4.6; radiusOuter: 8.75" material="side: double; src: SaturnRings.jpg" position="0 1 -88.6" rotation="45 45 0"></a-entity>
+  <!-- Uranus -->
+  <a-entity geometry="primitive: sphere; radius: 1.575" material="src: uranus.jpg" position="0 1 -98.775">
+    <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <!-- Neptune -->
+  <a-entity geometry="primitive: sphere; radius: 1.53" material="src: neptune.jpg" position="0 1 -106.88">
+    <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <!-- this is a test remove this later-->
+  <a-text value="This is a potato" color="red" position="0 1 -82.6"></a-text>
 
-    <!-- sky -->
-    <a-sky color="black"></a-sky>
+  <!-- sky -->
+  <a-sky color="black"></a-sky>
 
   </a-scene>
 </body>
