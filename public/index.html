@@ -14,15 +14,15 @@
     <!-- Sun -->
     <a-sphere radius="43.2" position="0 1 0" src="sun.jpg"></a-sphere>
     <!-- Mercury -->
-    <a-sphere radius="0.15" position="0 1 -48.5" src="mercury.jpeg"></a-sphere>
+    <a-entity geometry="primitive: sphere; radius:0.15" material="src: mercury.jpeg" position="0 1 -48.5">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-entity>
     <!-- Venus -->
     <a-sphere radius="0.375" position="0 1 -53.875" src="venus.jpeg"></a-sphere>
     <!-- Earth -->
-
     <a-entity geometry="primitive: sphere; radius: 0.4" material="src: earth.jpg" position="0 1 -59.65">
       <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
     </a-entity>
-    <!-- <a-sphere radius="0.4" position="0 1 -59.65" src="earth.jpg"></a-sphere> -->
     <!-- Mars -->
     <a-sphere radius="0.2" position="0 1 -65.7" src="mars.jpeg"></a-sphere>
     <!-- Jupiter -->
