@@ -18,7 +18,11 @@
     <!-- Venus -->
     <a-sphere radius="0.375" position="0 1 -53.875" src="venus.jpeg"></a-sphere>
     <!-- Earth -->
-    <a-sphere radius="0.4" position="0 1 -59.65" src="earth.jpg"></a-sphere>
+
+    <a-entity geometry="primitive: sphere; radius: 0.4" material="src: earth.jpg" position="0 1 -59.65">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-entity>
+    <!-- <a-sphere radius="0.4" position="0 1 -59.65" src="earth.jpg"></a-sphere> -->
     <!-- Mars -->
     <a-sphere radius="0.2" position="0 1 -65.7" src="mars.jpeg"></a-sphere>
     <!-- Jupiter -->
@@ -26,15 +30,15 @@
     <!-- Saturn -->
     <a-sphere radius="3.6" position="0 1 -88.6" src="saturn.jpg"></a-sphere>
     <!-- Saturns Ring -->
-    <a-ring ></a-ring>
     <a-entity geometry="primitive: ring; radiusInner: 4.6; radiusOuter: 8.75" material="side: double; src: SaturnRings.jpg" position="0 1 -88.6" rotation="45 45 0"></a-entity>
     <!-- Uranus -->
     <a-sphere radius="1.575" position="0 1 -98.775" src="uranus.jpg"></a-sphere>
     <!-- Neptune -->
     <a-sphere radius="1.53" position="0 1 -106.88" src="neptune.jpg"></a-sphere>
-
+    <!-- this is a test remove this later-->
     <a-text value="This is a potato" color="red" position="0 1 -82.6"></a-text>
 
+    <!-- sky -->
     <a-sky color="black"></a-sky>
 
   </a-scene>
