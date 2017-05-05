@@ -13,6 +13,6 @@ app.get('/', function index(req, res) {
 //   Server
 //=============
 
-app.listen(process.env,PORT || 3000, function(){
+app.listen(process.env.PORT || 3000, function(){
   console.log('solar system is on 3000');
 });
