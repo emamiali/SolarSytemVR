@@ -18,7 +18,9 @@
       <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
     </a-entity>
     <!-- Venus -->
-    <a-sphere radius="0.375" position="0 1 -53.875" src="venus.jpeg"></a-sphere>
+    <a-entity geometry="primitive: sphere; radius:0.375" material="src: venus.jpeg" position="0 1 -53.875">
+      <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-entity>
     <!-- Earth -->
     <a-entity geometry="primitive: sphere; radius: 0.4" material="src: earth.jpg" position="0 1 -59.65">
       <a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
