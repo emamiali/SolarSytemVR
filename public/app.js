@@ -22,7 +22,7 @@ for (let i = 0; i < 1000; i++) {
   scene.appendChild(rocks);
 }
 
-for ( let i = 0; i < 3000; i++) {
+for ( let i = 0; i < 1000; i++) {
   let belt =
   document.createElement('a-entity');
   let ringPosition = saturnRing();
