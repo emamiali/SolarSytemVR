@@ -1,7 +1,6 @@
 console.log('3 ... 2 ... 1 ... liftoff');
 
 const scene = document.querySelector('a-scene');
-console.log(document.querySelector('a-scene'));
 //add 1000 objects for the asteroid belt
 for (let i = 0; i < 500; i++) {
   let rocks = document.createElement('a-entity');
