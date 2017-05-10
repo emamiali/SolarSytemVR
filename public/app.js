@@ -11,7 +11,7 @@ for (var i = 0; i < 1000; i++) {
     radius: Math.random() / 5
   });
   obj.setAttribute('material', {
-    color: 'white'
+    color: 'rgb(41, 13, 13)'
   });
   obj.setAttribute('position', {
     x: position[0],
@@ -23,24 +23,25 @@ for (var i = 0; i < 1000; i++) {
 
 }
 
-function getRandColor() {
-  var letters = '0123456789ABCDEF'.split('');
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
-
 function getRandCoordz() {
-  var radius = 40;
+  var radius = 75;
   var angle = Math.random() * Math.PI * 2;
   var pt_radius_sq = Math.random() * radius * radius;
   var rootOfRadius = Math.sqrt(pt_radius_sq);
-  if (rootOfRadius < 38) {
-    rootOfRadius += 38;
-  }else if (rootOfRadius > 50) {
-    rootOfRadius -= 10;
+  if (rootOfRadius < 10){
+    rootOfRadius += 70
+  }else if (rootOfRadius < 20) {
+    rootOfRadius += 60
+  }else if (rootOfRadius < 30) {
+    rootOfRadius += 50
+  }else if (rootOfRadius < 40) {
+    rootOfRadius += 40;
+  }else if (rootOfRadius < 50) {
+    rootOfRadius += 30;
+  }else if (rootOfRadius < 60) {
+    rootOfRadius += 20
+  }else if (rootOfRadius < 70) {
+    rootOfRadius += 10
   }
   var x = rootOfRadius * Math.cos(angle);
   var z = rootOfRadius * Math.sin(angle);
