@@ -18,7 +18,7 @@
 
 ***
 
-## Future improvments
+## Future improvements
   * Work on the asteroid belt and Rings of Saturn
   * Have the correct rate of rotation for the planets
   * Add some moons for the planets.
